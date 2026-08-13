@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <div class="warning">⚠ Protótipo</div>
+
+            <h1>Cadastro</h1>
+            <p class="subtitle">Crie sua conta</p>
+
+            <form id="formCadastro">
+                <div class="form-group">
+                    <label for="cfname">Usuário:</label>
+                    <input
+                        type="text"
+                        id="cfname"
+                        name="usuario"
+                        placeholder="Usuário"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="clname">Senha:</label>
+                    <input
+                        type="password"
+                        id="clname"
+                        name="senha"
+                        placeholder="Senha"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="cconfirm">Confirme a senha:</label>
+                    <input
+                        type="password"
+                        id="cconfirm"
+                        name="confirmar"
+                        placeholder="Confirmar senha"
+                        required
+                    >
+                </div>
+
+                <p id="mensagemCadastro"></p>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <div class="link-row">
+                <a href="login.html">Já tem conta? Entrar</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

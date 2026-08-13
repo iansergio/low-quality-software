@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <div class="warning">⚠ Protótipo intencionalmente ruim</div>
+
+            <h1>Redefinir Senha</h1>
+            <p class="subtitle">Uma redefinição propositalmente problemática</p>
+
+            <form id="formRedefinir" action="login.html" method="GET">
+                <div class="form-group">
+                    <label for="fpassword">Nova senha:</label>
+                    <input
+                        type="password"
+                        id="fpassword"
+                        name="novaSenha"
+                        placeholder="Nova senha"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Confirme sua nova senha:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="confirmarSenha"
+                        placeholder="Confirmar nova senha"
+                    >
+                </div>
+
+                <p class="hint">
+                    A senha é enviada na URL porque o formulário usa GET.
+                </p>
+
+                <p id="mensagem"></p>
+                <button type="submit">Salvar</button>
+            </form>
+
+            <div class="link-row">
+                <a href="login.html">Voltar para o login</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
